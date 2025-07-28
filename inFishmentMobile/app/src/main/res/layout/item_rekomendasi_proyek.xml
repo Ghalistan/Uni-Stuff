@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/item_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_foto_proyek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/iv_proyek"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_lobster"
+            android:adjustViewBounds="true" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_nama_proyek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tambak Lobster Ciremai"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:lines="2"
+        android:ellipsize="marquee"
+        app:layout_constraintStart_toStartOf="@id/cv_foto_proyek"
+        app:layout_constraintEnd_toEndOf="@id/cv_foto_proyek"
+        app:layout_constraintTop_toBottomOf="@id/cv_foto_proyek" />
+
+    <TextView
+        android:id="@+id/tv_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="Rp "
+        app:layout_constraintTop_toTopOf="@id/tv_harga_proyek"
+        app:layout_constraintBottom_toBottomOf="@id/tv_harga_proyek"
+        app:layout_constraintLeft_toLeftOf="@id/tv_nama_proyek" />
+
+    <TextView
+        android:id="@+id/tv_harga_proyek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500.000"
+        android:textStyle="bold"
+        android:textColor="@color/blue_primary"
+        app:layout_constraintTop_toBottomOf="@id/tv_nama_proyek"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_currency" />
+</androidx.constraintlayout.widget.ConstraintLayout>

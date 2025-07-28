@@ -1,0 +1,50 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.Proyek-name {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 24px;
+    color: #4a4a4a;
+}
+
+.Risk-type {
+    font-family: Roboto;
+    font-weight: 500 !important;
+    font-size: 14px;
+    color: #5CB85C !important;
+}
+
+.Proyek-loc {
+    @extend .Risk-type;
+    font-weight: normal;
+    color: #737373 !important;
+}
+
+.Proyek-owner {
+    @extend .Proyek-loc;
+}
+
+.Prop-titles {
+    font-family: Roboto;
+    font-size: 12px;
+    color: #737373 !important;
+}
+
+.Prop-info {
+    font-family: Roboto;
+    font-weight: 500 !important;
+    font-size: 16px;
+    color: #4A4A4A !important;
+}
+
+.Prop-info-green {
+    @extend .Prop-info;
+    color: #5CB85C !important;
+}
+
+.Desc-Proyek {
+    font-family: Roboto;
+    font-weight: 500 !important;
+    font-size: 16px;
+    color: #4a4a4a !important;
+}

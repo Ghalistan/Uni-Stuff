@@ -1,0 +1,32 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="ratingBar" parent="android:Widget.Material.RatingBar.Small">
+        <item name="minHeight">10dp</item>
+        <item name="maxHeight">10dp</item>
+    </style>
+    <style name="ratingBarTheme" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#F44336</item>
+        <item name="colorControlActivated">#F44336</item>
+    </style>
+    <style name="inputAuth" parent="android:Widget.EditText">
+        <item name="android:textColor">#F44336</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="backgroundTint">#F44336</item>
+    </style>
+    <style name="Theme.AppCompat.Launcher">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <style name="AppTheme.TabLayaout">
+        <item name="colorAccent">#f44336</item>
+    </style>
+    <style name="AppTheme.BottomNavigation">
+        <item name="colorPrimary">#f33446</item>
+    </style>
+</resources>

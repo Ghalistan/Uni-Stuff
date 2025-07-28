@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_foto_proyek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="24dp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView
+            android:id="@+id/iv_proyek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_lele" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_nama_proyek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:ellipsize="marquee"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="Budidaya Tambak Lele Kota Ponorogo"
+        app:layout_constraintStart_toEndOf="@id/cv_foto_proyek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cv_foto_proyek" />
+
+    <TextView
+        android:id="@+id/tv_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp "
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_nama_proyek"
+        app:layout_constraintTop_toTopOf="@id/tv_harga_proyek"
+        app:layout_constraintBottom_toBottomOf="@id/tv_harga_proyek"/>
+
+    <TextView
+        android:id="@+id/tv_harga_proyek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="250.000"
+        android:textStyle="bold"
+        android:textColor="@color/blue_primary"
+        app:layout_constraintStart_toEndOf="@id/tv_currency"
+        app:layout_constraintTop_toBottomOf="@id/tv_nama_proyek"
+        app:layout_constraintBottom_toTopOf="@id/tv_pembiayaan_terpenuhi"/>
+
+    <TextView
+        android:id="@+id/tv_keuntungan_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keuntungan"
+        android:layout_marginEnd="5dp"
+        android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintLeft_toRightOf="@id/tv_harga_proyek"
+        app:layout_constraintRight_toLeftOf="@id/tv_keuntungan"
+        app:layout_constraintTop_toTopOf="@id/tv_keuntungan"
+        app:layout_constraintBottom_toBottomOf="@id/tv_keuntungan"/>
+
+    <TextView
+        android:id="@+id/tv_keuntungan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14%"
+        android:textStyle="bold"
+        android:textColor="#5cb85c"
+        app:layout_constraintTop_toBottomOf="@id/tv_nama_proyek"
+        app:layout_constraintBottom_toTopOf="@id/tv_pembiayaan_terpenuhi"
+        app:layout_constraintRight_toRightOf="@id/tv_nama_proyek"/>
+
+    <TextView
+        android:id="@+id/tv_pembiayaan_terpenuhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/visbyroundcf_demibold"
+        android:text="Pembiayaan Terpenuhi"
+        android:textSize="12sp"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintLeft_toLeftOf="@id/tv_nama_proyek"
+        app:layout_constraintTop_toBottomOf="@id/tv_currency"
+        app:layout_constraintBottom_toTopOf="@id/progressBar"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="90%"
+        android:fontFamily="@font/visbyroundcf_demibold"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintRight_toRightOf="@id/tv_nama_proyek"
+        app:layout_constraintLeft_toRightOf="@id/tv_pembiayaan_terpenuhi"
+        app:layout_constraintTop_toBottomOf="@id/tv_keuntungan"
+        app:layout_constraintBottom_toTopOf="@id/progressBar"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progress="90"
+        app:layout_constraintStart_toStartOf="@id/tv_nama_proyek"
+        app:layout_constraintEnd_toEndOf="@id/tv_nama_proyek"
+        app:layout_constraintBottom_toBottomOf="@id/cv_foto_proyek" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

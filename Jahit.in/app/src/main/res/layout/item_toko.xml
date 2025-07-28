@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_toko"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="3dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="8dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:id="@+id/iv_item_toko"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/toko_1"
+                android:scaleType="fitXY"
+                android:paddingHorizontal="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_nama_toko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_item_toko"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                style="@style/NamaToko"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_nama_toko"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_rating_toko"
+                    android:layout_width="15dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/star"
+                    android:layout_marginEnd="6dp"/>
+
+                <TextView
+                    android:id="@+id/tv_rating_toko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iv_rating_toko"
+                    style="@style/RatingToko"/>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_status_toko"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="aaaaa"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--style="@style/StatusToko"/>-->
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

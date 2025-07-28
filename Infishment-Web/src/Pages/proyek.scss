@@ -1,0 +1,64 @@
+.Subtitle {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    color: #4a4a4a;
+}
+
+.input-group-text {
+    background-color: #fff;
+    border-right: 0 none;
+}
+
+.ProfitInput {
+    text-align: right;
+    border-radius: 0.25rem !important;
+    background-color: white !important;
+    border-left: 0 none;
+}
+
+.ProfitInput:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+.carousel-indicators .active {
+    background-color: white;
+}
+
+.card-title {
+    font-family: Roboto;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.risk-type {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 12px;
+    color: #F82F03 !important;
+}
+
+.project-place {
+    @extend .risk-type;
+    color: #737373 !important;
+}
+
+.Card-prop {
+    font-family: Roboto;
+    font-size: 12px;
+    color: #737373;
+}
+
+.Card-num-data {
+    font-family: Roboto;
+    font-weight: 500;
+    color: #5CB85C !important;
+}
+
+.Card-proj-slot {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #4a4a4a;
+}

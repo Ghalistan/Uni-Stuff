@@ -1,0 +1,169 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+#youtube {
+    display: block;
+    margin: 0 auto;
+}
+
+.LandingPhrase {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.LandingBox1 {
+    height: 100vh;
+    background: transparent url(../Assets/Landing-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.LandingWrap {
+    width: 38vw;
+}
+
+.Invest-Button {
+    background-color: #2962ff;
+    border: none;
+    font-family: Roboto;
+}
+
+.LandingBox2 {
+    background: transparent url(../Assets/Landing-background2.png) no-repeat bottom /cover;
+    background-position: 0% 0%;
+}
+
+.LandingTitle {
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+.LandingTitle2 {
+    @extend .LandingTitle;
+    color: #ffffff;
+}
+
+.LB2-numb {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+.LB2-txt {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+.LB3 {
+    height: 100vh;
+}
+
+.LB3-txt {
+    color: #4a4a4a;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+.LB-4 {
+    background: transparent url(../Assets/Landing-background3.png) no-repeat center /cover;
+}
+
+.LB4-Icon {
+    height: 4rem;
+}
+
+.LB4-txt {
+    @extend .LB3-txt;
+    color: #ffffff;
+}
+
+.LB4-subtxt {
+    @extend .LB2-txt;
+    font-size: 14px;
+}
+
+.LB5-main {
+    background-color: #f3f7fa;
+}
+
+.card-title {
+    @extend .LB3-txt;
+    font-size: 16px;
+}
+
+.card-txt {
+    padding: 0;
+    margin: 0;
+    color: #737373;
+    font-size: 0.8rem;
+    font-family: Roboto;
+}
+
+.card-data {
+    @extend .card-txt;
+    color: #5cb85c;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-data2 {
+    color: #4a4a4a;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+.card-status {
+    @extend .card-data;
+    color: #f89a03;
+    font-size: 0.8rem;
+}
+
+.progress {
+    height: 10px;
+}
+
+.review-pict {
+    height: 10vh;
+    width: 10vh;
+}
+
+.review-txt {
+    text-align: center;
+    color: #737373;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: Roboto;
+}
+
+.reviewer-name {
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: Roboto;
+}
+
+.reviewer-job {
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Roboto;
+}
+
+.carousel-indicators li {
+    background-color: grey;
+}
+
+.carousel-indicators .active {
+    background-color: #2962ff;
+}

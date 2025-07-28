@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Kos Lotus</string>
+    <string name="Pembayaran">Segera Lakukan Pembayaran Sebelum :</string>
+    <string name="Tanggal">Sabtu, 13 Oktober 2018, 01:34 WIB</string>
+    <string name="Transfer">Transfer Pembayaran ke Nomor Rekening :</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- cuma coba-coba ntar gua ganti -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Header di beranda !-->
+    <string name="header_beranda">Rekomendasi</string>
+    <string name="dummy_alamat">Jl. Sukabirus Gang. Selamet Rt.4 Rw.8 Citereup, dayeuhkolot, Bandung</string>
+    <string name="Cara_pembayaran">Cara Pembayaran</string>
+    <string name="kurir_pengiriman">Kurir Pengiriman</string>
+
+    <!-- Label Tab Layout Pembelian -->
+    <string name="pakaian_custom_title">Kamar Kos</string>
+    <string name="pakaian_jadi_title">Pakaian Jadi</string>
+    <string name="menu_label_informasi_toko">Informasi Toko</string>
+
+    <!-- Button tambah -->
+    <string name="button_tambah_default">Tambah</string>
+    <string name="button_tambah_batal">Batal</string>
+    <string name="jenis_pakaian">Jenis Pakaian</string>
+    <string name="alamat">Jl. Sukabirus, Gang. Sebelah Masjid Istiqomah Bojongsoang, Bandung, 40257</string>
+    <string name="title_activity_on_boarding">onBoarding</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="contoh_catatan">Untuk saat ini stock barang masih kosong, sehingga untuk setiap pemesanan akan memakan tambahan waktu 7 hari unruk melakukan produksi terhadap barang yang dipesan</string>
+</resources>

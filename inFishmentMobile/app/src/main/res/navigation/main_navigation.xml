@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ghalistan.infishmentmobile.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/goToDetailProyek"
+            app:destination="@id/detailProyekActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/pendanaanFragment"
+        android:name="com.ghalistan.infishmentmobile.fragments.PendanaanFragment"
+        android:label="fragment_pendanaan"
+        tools:layout="@layout/fragment_pendanaan" />
+    <fragment
+        android:id="@+id/transaksiFragment"
+        android:name="com.ghalistan.infishmentmobile.fragments.TransaksiFragment"
+        android:label="fragment_transaksi"
+        tools:layout="@layout/fragment_transaksi" />
+    <activity
+        android:id="@+id/detailProyekActivity"
+        android:name="com.ghalistan.infishmentmobile.activities.DetailProyekActivity"
+        android:label="activity_detail_proyek"
+        tools:layout="@layout/activity_detail_proyek" />
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/bannerFragment"
+            android:icon="@drawable/ic_banner"
+            android:title="Banners" />
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/optionsFragment"
+            android:icon="@drawable/ic_setting"
+            android:title="Options"></item>
+    </group>
+</menu>

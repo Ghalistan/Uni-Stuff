@@ -1,0 +1,53 @@
+.navbar-brand {
+  font-family: "Righteous";
+  font-weight: 400;
+}
+
+.nav-link {
+  font-family: "Inter";
+}
+
+.nav-link-active {
+  background-color: brown;
+}
+
+.tagline {
+  font-family: "ibm-plex-serif";
+  font-size: 24px;
+  text-align: center;
+}
+
+.resume-btn {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: "playfair-display";
+  font-size: 40px;
+}
+
+p {
+  font-family: "Inter";
+  font-size: 14px;
+}
+
+a {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  color: #757575;
+}
+
+a:hover {
+  color: #757575;
+  text-decoration: none;
+}
+
+@include media-breakpoint-up(xl) { 
+  .tagline-container {
+    width: 50%;
+    background-color: black;
+  }
+}
