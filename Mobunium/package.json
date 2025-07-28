@@ -1,0 +1,15 @@
+{
+  "name": "mobunium",
+  "version": "1.0.0",
+  "description": "Mobile Unity Based Game Automation Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ghalistan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "wd": "^1.12.1"
+  }
+}

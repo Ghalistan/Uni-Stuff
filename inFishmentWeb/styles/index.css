@@ -1,0 +1,81 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write your own custom component styles here */
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "VisbyRoundCF-DemiBold";
+    src: url("/fonts/VisbyRoundCF-DemiBold.otf");
+}
+
+@font-face {
+    font-family: "NunitoSans";
+    src: url("/fonts/NunitoSans-Regular.ttf")
+}
+
+nav {
+    @apply flex;
+    @apply flex-col;
+    @apply p-6;
+    @apply transition-all;
+    @apply duration-300;
+    @apply font-inter;
+    @apply font-thin;
+}
+
+.nav-menu {
+    @apply flex;
+    @apply flex-col;
+}
+
+.btn-white {
+    @apply text-primaryblue;
+    @apply bg-white;
+}
+
+.btn-blue {
+    @apply text-white;
+    @apply bg-primary-blue;
+}
+
+/* Small (sm) */
+@media (min-width: 640px) { /* ... */ }
+
+/* Medium (md) */
+@media (min-width: 768px) {
+    nav {
+        @apply flex-row;
+        @apply items-center;
+    }
+
+    .nav-menu {
+        @apply flex-auto;
+        @apply justify-end;
+        @apply flex-row;
+    }
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) { /* ... */ }
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) { 
+    nav {
+        @apply px-48;
+    }
+ }
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
