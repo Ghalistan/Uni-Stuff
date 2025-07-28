@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "histories",
+  "info": {
+    "name": "history",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Investor": {
+      "required": true,
+      "type": "string"
+    },
+    "Nominal": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Tambak": {
+      "required": true,
+      "type": "string"
+    },
+    "Tanggal": {
+      "required": true,
+      "type": "date"
+    }
+  }
+}

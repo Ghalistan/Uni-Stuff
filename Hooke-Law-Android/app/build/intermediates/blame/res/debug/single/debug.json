@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_icon.png.flat",
+        "source": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\src\\main\\res\\drawable-ldpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mass.png.flat",
+        "source": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\src\\main\\res\\drawable-hdpi\\mass.png"
+    },
+    {
+        "merged": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_spring.png.flat",
+        "source": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\src\\main\\res\\drawable-hdpi\\spring.png"
+    },
+    {
+        "merged": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_random.png.flat",
+        "source": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\src\\main\\res\\drawable-hdpi\\random.png"
+    },
+    {
+        "merged": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\build\\intermediates\\res\\merged\\debug\\layout_main.xml.flat",
+        "source": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_fps.png.flat",
+        "source": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\src\\main\\res\\drawable-hdpi\\fps.png"
+    },
+    {
+        "merged": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon.png.flat",
+        "source": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_icon.png.flat",
+        "source": "C:\\Users\\Zherantova\\Documents\\AndroidFiles\\HookeLaw\\app\\src\\main\\res\\drawable-hdpi\\icon.png"
+    }
+]

@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "investors",
+  "info": {
+    "name": "investor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Nama": {
+      "required": true,
+      "type": "string"
+    },
+    "TempatLahir": {
+      "type": "string"
+    },
+    "TanggalLahir": {
+      "type": "date"
+    },
+    "NoKTP": {
+      "type": "biginteger"
+    },
+    "Email": {
+      "required": true,
+      "type": "email"
+    },
+    "Password": {
+      "type": "password"
+    },
+    "NominalWallet": {
+      "type": "biginteger",
+      "default": "0"
+    }
+  }
+}

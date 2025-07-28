@@ -1,0 +1,74 @@
+div.header {
+	background-color: #2E3A62;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+div.login-form {
+	width: 250px;
+}
+
+a.footertext {
+	color: white;
+
+	font-family: Verdana;
+	font-size: 15px;
+}
+
+.socialicon {
+	padding: 0px 5px 0px 5px;
+}
+
+h1#bigtext {
+	color: #2D3B61;
+
+	font-weight: 600;
+	font-size: 60px;
+}
+
+button#bigdaftar {
+	background-color: #2E3A62;
+	border: none;
+	padding: 15px 35px 15px 35px;
+
+	font-family: Verdana;
+	font-size: 25px;
+}
+
+#smalldaftar {
+	background-color: #2E3A62;
+	border: none;
+	padding: 10px 15px 10px 15px;
+
+	font-family: Verdana;
+	font-size: 15px;
+}
+
+#About {
+	color: white;
+
+	font-family: Verdana;
+	font-size: 50px;
+}
+
+#title {
+	color: white;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 50px;
+	text-decoration: none;
+}
+
+#login {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	background-color: #566792;
+	border: none;
+
+	font-family: Verdana;
+	font-weight: bold;
+	text-decoration: none;
+}

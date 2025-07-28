@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/statustambaks",
+      "handler": "Statustambak.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/statustambaks/count",
+      "handler": "Statustambak.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/statustambaks/:id",
+      "handler": "Statustambak.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/statustambaks",
+      "handler": "Statustambak.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/statustambaks/:id",
+      "handler": "Statustambak.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/statustambaks/:id",
+      "handler": "Statustambak.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

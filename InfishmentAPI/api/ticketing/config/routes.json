@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ticketings",
+      "handler": "Ticketing.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ticketings/count",
+      "handler": "Ticketing.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ticketings/:id",
+      "handler": "Ticketing.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ticketings",
+      "handler": "Ticketing.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ticketings/:id",
+      "handler": "Ticketing.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ticketings/:id",
+      "handler": "Ticketing.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

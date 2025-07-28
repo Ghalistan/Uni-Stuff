@@ -1,0 +1,81 @@
+{
+  "connection": "default",
+  "collectionName": "tambaks",
+  "info": {
+    "name": "tambak",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Nama": {
+      "required": true,
+      "type": "string"
+    },
+    "TotalSlot": {
+      "type": "biginteger",
+      "required": true
+    },
+    "FundedSlot": {
+      "type": "biginteger",
+      "required": true
+    },
+    "HargaSlot": {
+      "type": "biginteger",
+      "required": true
+    },
+    "minReturn": {
+      "type": "decimal",
+      "required": true
+    },
+    "maxReturn": {
+      "type": "decimal",
+      "required": true
+    },
+    "InvestPeriod": {
+      "type": "integer",
+      "required": true
+    },
+    "Open": {
+      "required": true,
+      "type": "date"
+    },
+    "Start": {
+      "required": true,
+      "type": "date"
+    },
+    "Closed": {
+      "required": true,
+      "type": "date"
+    },
+    "Foto": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "PDF": {
+      "type": "string"
+    },
+    "Kategori": {
+      "required": true,
+      "type": "string"
+    },
+    "statustambaks": {
+      "collection": "statustambak",
+      "via": "tambak"
+    },
+    "SeedAmount": {
+      "type": "biginteger"
+    },
+    "Deskripsi": {
+      "required": true,
+      "type": "text"
+    }
+  }
+}

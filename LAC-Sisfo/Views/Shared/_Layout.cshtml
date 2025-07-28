@@ -1,0 +1,98 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pusat Bahasa | @ViewData["Title"]</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/Home/simple-sidebar.css" />
+    @RenderSection("CSS", required: false)
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand" href="#">@HttpContextAccessor.HttpContext.Session.GetString("Nama")</a>
+        <form asp-controller="Login" asp-action="Logout" method="post">
+            <button type="submit" class="btn btn-outline-light">Logout</button>
+        </form>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 collapse d-md-flex bg-light pt-2 min-vh-100" id="sidebar">
+                <ul class="nav flex-column flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-toggle="collapse" data-target="#pendaftaran" href="#">Pendaftaran Program</a>
+                        <div class="collapse" id="pendaftaran" aria-expanded="false">
+                            <ul class="flex-column pl-2 nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Pendaftaran" asp-action="Index">Pendaftaran</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link collapsed" asp-controller="Pendaftaran" asp-action="DataPendaftaran">Data Pendaftaran</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-toggle="collapse" data-target="#Nilai" href="#">Nilai</a>
+                        <div class="collapse" id="Nilai" aria-expanded="false">
+                            <ul class="flex-column pl-2 nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Nilai" asp-action="Index">Nilai Tes Bahasa</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" asp-controller="Nilai" asp-action="InstansiLuar">Input Nilai Dari Instansi Luar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-toggle="collapse" data-target="#membership" href="#">Keanggotaan</a>
+                        <div class="collapse" id="membership" aria-expanded="false">
+                            <ul class="flex-column pl-2 nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Membership" asp-action="Index">LAC Anggota Tahunan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Help" asp-action="Index">Unduh Petunjuk Penggunaan</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col pt-2">
+                @HttpContextAccessor.HttpContext.Session.GetString("check")
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container-fluid justify-content-center">
+            &copy; 2019 - LaC - Kelompok 8 IF-40-04
+        </div>
+    </footer>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

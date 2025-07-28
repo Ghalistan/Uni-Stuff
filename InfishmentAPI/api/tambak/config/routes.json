@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tambaks",
+      "handler": "Tambak.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tambaks/count",
+      "handler": "Tambak.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tambaks/:id",
+      "handler": "Tambak.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tambaks",
+      "handler": "Tambak.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tambaks/:id",
+      "handler": "Tambak.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tambaks/:id",
+      "handler": "Tambak.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "ticketings",
+  "info": {
+    "name": "ticketing",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Email": {
+      "required": true,
+      "type": "email"
+    },
+    "TipeTiket": {
+      "required": true,
+      "type": "string"
+    },
+    "Pesan": {
+      "type": "text",
+      "required": true
+    },
+    "File": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

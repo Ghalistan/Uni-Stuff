@@ -1,0 +1,22 @@
+﻿@page "{id:int}"
+@model TestASP.Pages.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Costumer - @Model.Costumer.Id</h1>
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <input asp-for="Costumer.Id" type="hidden" />
+    <div>
+        <label asp-for="Costumer.Name"></label>
+        <div>
+            <input asp-for="Costumer.Name" />
+            <span asp-validation-for="Costumer.Name"></span>
+        </div>
+    </div>
+    <div>
+        <button type="submit">Save</button>
+    </div>
+</form>
+

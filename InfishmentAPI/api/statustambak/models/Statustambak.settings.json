@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "statustambaks",
+  "info": {
+    "name": "statustambak",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Status": {
+      "required": true,
+      "type": "string"
+    },
+    "Tanggal": {
+      "required": true,
+      "type": "date"
+    },
+    "tambak": {
+      "model": "tambak",
+      "via": "statustambaks"
+    }
+  }
+}

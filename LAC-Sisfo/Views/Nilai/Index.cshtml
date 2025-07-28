@@ -1,0 +1,48 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Nilai Tes Bahasa";
+}
+@section CSS {
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+}
+@section Scripts {
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script src="~/js/Nilai/DataTable.js"></script>
+}
+@{
+    var data = ViewBag.data;
+}
+
+<div class="container mt-3">
+    <table class="table table-striped table-bordered table-sm" id="nilaitest">
+        <thead>
+            <tr>
+                <th>Tanggal Tes</th>
+                <th>Tipe Tes</th>
+                <th>Nama</th>
+                <th>NIK / NIM</th>
+                <th>Tipe Peserta</th>
+                <th>Ruangan</th>
+                <th>Nilai Total</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            @foreach (var d in data)
+            {
+                @if (d.Jenis_Nilai == "Internal" && d.Nama == HttpContextAccessor.HttpContext.Session.GetString("Nama"))
+                {
+                    <tr>
+                        <td>@d.Tgl_Test</td>
+                        <td>@d.Tipe_Test</td>
+                        <td>@d.Nama</td>
+                        <td>@d.NIM</td>
+                        <td>@d.Tipe_Peserta</td>
+                        <td>@d.Ruangan</td>
+                        <td>@d.Nilai_Total</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
